@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./assets/logo.png" type="image/png">
+  <title>Gokul Falke - Portfolio</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-dark text-light sm">
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top sm" style="box-shadow: 0px 2px 10px rgb(19, 173, 178);">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./assets/logo.png" alt="Logo" style="height: 50px;">
+      <b class="h3 pt-2" style="text-shadow: 0px 5px 10px rgb(239, 246, 33); font-size: 1.6rem; color: lightgray;">
+        <b>Gokul</b>
+      </b>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item h5 mx-3">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item h5 mx-3">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item h5 mx-3">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item h5 mx-3">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item h5 mx-3">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Home Section -->
+  <section id="home" class="sm">
+    <div>
+      <h1 style="text-shadow: 0px 5px 5px rgb(45, 216, 238);">Welcome to My Portfolio</h1>
+      <p class="lead">I'm Gokul Falke, a passionate Java Developer from Ahmednagar, Maharashtra</p>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="section bg-dark text-light">
+  <div class="container">
+    <h2 class="text-center mb-4 animate__animated animate__fadeIn" style="text-shadow: 0px 5px 10px white;">About Me</h2>
+    <div class="row d-flex align-items-center">
+
+      <div class="col-md-6 text-center">
+        <img src="./assets/IMG_20241208_150249_687.jpg" alt="About Me" class="about-img img-fluid rounded animate__animated animate__zoomIn pt-5">
+      </div>
+
+
+      <div class="col-md-6">
+
+        <div class="tab-titles d-flex justify-content-between flex-wrap mb-3">
+          <button class="btn btn-dark tab-links active-link" onclick="opentab('aboutme')">About Me</button>
+          <button class="btn btn-dark tab-links" onclick="opentab('education')">Education</button>
+          <button class="btn btn-dark tab-links" onclick="opentab('experience')">Experience</button>
+          <button class="btn btn-dark tab-links" onclick="opentab('skills')">Skills</button>
+        </div>
+
+
+        <div class="tab-contents active-tab" id="aboutme">
+          <p>
+            "I specialize in creating efficient, scalable, and user-friendly software solutions. With expertise in Java, Spring Boot, and web development, I aim to combine functionality with visually appealing design. I am passionate about building reliable back-end systems and seamlessly connecting them with intuitive and engaging front-end interfaces."
+          </p>
+          <div class="mt-4">
+            <a href="assets/Gokul Falke.pdf" class="btn btn-info animate__animated animate__fadeInUp" target="_blank" download>
+              Resume
+            </a>
+          </div>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span><b>2024</b></span><br>Bachelor of Computer Science (BCS) - Babasaheb Ambedkar University</li>
+            <li><span><b>2021</b></span><br>12th - Dadasaheb Rupawate Vidyalaya Ahmednagar</li>
+            <li><span><b>2019</b></span><br>10th - Dadasaheb Rupawate Vidyalaya Ahmednagar</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span><b>2023</b></span><br>Java Problem-Solving Intern at Naresh iT, focusing on enhancing programming logic and solving complex challenges.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="skills">
+          <ul>
+            <li><span>Java / Spring / Spring Boot</span><br>Developing scalable web and application backends</li>
+            <li><span>HTML / CSS / JavaScript / Bootstrap</span><br>Creating responsive and modern web interfaces</li>
+            <li><span>MySQL</span><br>Designing and managing relational databases</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section bg-dark text-dark sm">
+  <div class="container">
+    <h2 class="text-center mb-5 text-light" style="text-shadow: 0px 5px 10px white;">Services</h2>
+    <div class="row">
+      <div class="col-md-3 mb-5">
+        <div class="service-box text-center" style="box-shadow: 0px 5px 10px white; transition: all 0.3s ease-in-out;">
+          <i class="fab fa-java fa-3x mb-3"></i>
+          <h4>Java Development</h4>
+          <p>I specialize in building scalable and reliable applications using Java, Spring, and Spring Boot. I focus on creating efficient back-end systems and RESTful APIs.</p>
+          <p><strong>Example:</strong> Developed a library management system for tracking books and users.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-5">
+        <div class="service-box text-center" style="box-shadow: 0px 5px 10px white; transition: all 0.3s ease-in-out;">
+          <i class="fas fa-code fa-3x mb-3"></i>
+          <h4>Web Development</h4>
+          <p>I create responsive websites using HTML, CSS, JavaScript, and Bootstrap. My designs are user-friendly, fast, and mobile-optimized.</p>
+          <p><strong>Example:</strong> Designed my portfolio website to showcase my skills and projects.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-5">
+        <div class="service-box text-center" style="box-shadow: 0px 5px 10px white; transition: all 0.3s ease-in-out;">
+          <i class="fas fa-database fa-3x mb-3"></i>
+          <h4>Database Management</h4>
+          <p>I design, manage, and optimize databases using MySQL, ensuring secure and efficient data handling for various applications.</p>
+          <p><strong>Example:</strong> Built a MySQL database for an e-commerce system to manage products and orders.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-5">
+        <div class="service-box text-center" style="box-shadow: 0px 5px 10px white; transition: all 0.3s ease-in-out;">
+          <i class="fas fa-cogs fa-3x mb-3"></i>
+          <h4>System Design</h4>
+          <p>I design scalable and secure systems using tools like Maven, Docker, and Git, ensuring seamless integration and high performance.</p>
+          <p><strong>Example:</strong> Designed a cloud-based architecture for a scalable e-commerce platform.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Projects Section -->
+<section id="projects" class="section bg-dark text-light sm">
+  <div class="container">
+    <h2 class="text-center mb-5" style="text-shadow: 0px 5px 10px white;">Projects</h2>
+    <div class="row">
+
+      <div class="col-md-4 project-item">
+        <div class="card" style="box-shadow: 0px 5px 10px white;">
+          <img src="assets/restaurent.webp" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title text-dark text-center">Restaurant Order Management System</h5>
+            <p class="card-text">A brief description of the project.</p>
+            <div class="text-center">
+              <a href="https://github.com/KaranPavhane/Restaurant-Order-Management" class="btn btn-primary sm" target="_blank">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 project-item">
+        <div class="card" style="box-shadow: 0px 5px 10px white;">
+          <img src="assets/portfolio.webp" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title text-dark text-center">Portfolio Website</h5>
+            <p class="card-text">A brief description of the project.</p>
+            <div class="text-center">
+              <a href="https://github.com/yourgithubusername/portfolio-website" class="btn btn-primary sm" target="_blank">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 project-item">
+        <div class="card" style="box-shadow: 0px 5px 10px white;">
+          <img src="assets/atm.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title text-dark text-center">ATM Management System</h5>
+            <p class="card-text">A brief description of the project.</p>
+            <div class="text-center">
+              <a href="https://github.com/yourgithubusername/atm-management-system" class="btn btn-primary sm" target="_blank">
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section sm">
+  <div class="container">
+    <h2 class="text-center mb-5" style="text-shadow: 0px 5px 10px white;">Contact</h2>
+    <div class="row">
+
+      <div class="col-md-6 mt-4">
+        <form action="send_email.php" method="post" class="contact-form" id="contactForm" style="box-shadow: 0px 5px 10px white">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary sm">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="map-responsive mt-4">
+          <iframe style="box-shadow: 0px 5px 10px white; border-radius: 15px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.532123456789!2d74.73100031490123!3d19.095207987072123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba123456789ab%3A0x123456789abcdef!2sAhmednagar%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Quick Links Section -->
+      <div class="col-md-6 mb-4">
+        <h5 class="h4" style="text-shadow: 0px 5px 10px white;">Quick Links</h5>
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+          <li><a href="#home" class="footer-link text-decoration-none text-light">Home</a></li>
+          <li><a href="#about" class="footer-link text-decoration-none text-light">About</a></li>
+          <li><a href="#services" class="footer-link text-decoration-none text-light">Services</a></li>
+          <li><a href="#projects" class="footer-link text-decoration-none text-light">Projects</a></li>
+          <li><a href="#contact" class="footer-link text-decoration-none text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="col-md-6 mb-4 text-center">
+        <h5 class="pb-2" style="text-shadow: 0px 5px 10px white;">Follow Me</h5>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://www.instagram.com/xx_gokulfalke17/" class="text-light"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://x.com/GokulFalke17" class="text-light"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/gokul-falke-046a7824a/" class="text-light"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/gokulfalke17" class="text-light"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-4">
+      <hr class="text-light" />
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="text-center mt-4">
+      <p>&copy; 2024 Gokul Falke. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link text-decoration-none text-light">Privacy Policy</a> | 
+        <a href="#" class="footer-link text-decoration-none text-light">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function opentab(tabName) {
+
+    var tabs = document.querySelectorAll('.tab-contents');
+    tabs.forEach(function (tab) {
+      tab.classList.remove('active-tab');
+    });
+
+
+
+
+    var links = document.querySelectorAll('.tab-links');
+    links.forEach(function (link) {
+      link.classList.remove('active-link');
+    });
+
+
+    document.getElementById(tabName).classList.add('active-tab');
+    document.querySelector(`.tab-links[onclick="opentab('${tabName}')"]`).classList.add('active-link');
+  }
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
