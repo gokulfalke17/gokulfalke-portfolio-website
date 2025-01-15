@@ -93,13 +93,10 @@
     .tab-contents.active-tab {
       display: block;
     }
-    
-
     .active-link {
       background-color: #007bff;
     }
-
-
+    
     .tab-contents {
       display: none;
       margin-top: 20px;
@@ -111,11 +108,19 @@
 
 
     .about-img {
-      max-width: 100%;
-      height: 500px;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-    }
+      width: 400px;
+      height: 550px;
+      border-radius: 50%;
+      transition: transform 1.3s inherit;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      -webkit-transition: transform 1.3s inherit;
+      -moz-transition: transform 1.3s inherit;
+      -ms-transition: transform 1.3s inherit;
+      -o-transition: transform 1.3s inherit;
+}
 
     .about-img:hover {
       transform: scale(1.05);
