@@ -93,13 +93,10 @@
     .tab-contents.active-tab {
       display: block;
     }
-    
-
     .active-link {
       background-color: #007bff;
     }
-
-
+    
     .tab-contents {
       display: none;
       margin-top: 20px;
