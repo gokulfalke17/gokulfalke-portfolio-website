@@ -47,17 +47,17 @@
       background-size: cover;
       background-position: center;
       text-align: center;
-      padding: 150px 0;
+      padding: 278px 0;
       background-attachment: fixed;
     }
 
     #home h1 {
-      font-size: 3.5rem;
+      font-size: 4.0rem;
       font-weight: 600;
     }
 
     #home p {
-      font-size: 1.25rem;
+      font-size: 1.30rem;
     }
 
 
@@ -112,19 +112,34 @@
 
 
     .about-img {
-      width: 400px;
-      height: 550px;
-      border-radius: 50%;
-      transition: transform 1.3s inherit;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      -webkit-transition: transform 1.3s inherit;
-      -moz-transition: transform 1.3s inherit;
-      -ms-transition: transform 1.3s inherit;
-      -o-transition: transform 1.3s inherit;
+      width: 350px;
+      height: 490px;
+      border-radius: 200px;
+      transition: transform 2.5s inherit;
+      -webkit-border-radius: 200px;
+      -moz-border-radius: 200px;
+      -ms-border-radius: 200px;
+      -o-border-radius: 200px;
+      -webkit-transition: transform 2.5s inherit;
+      -moz-transition: transform 2.5s inherit;
+      -ms-transition: transform 2.5s inherit;
+      -o-transition: transform 2.5s inherit;
+      box-shadow: 0px 10px 10px rgba(206, 216, 113, 0.689), 0px 0px 10px rgba(236, 142, 225, 0.821);
 }
+
+.about-img:hover {
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+}
+
+.about-img:hover {
+  box-shadow: 0px 10px 10px white, 0px 0px 10px lightcyan;
+
+}
+
 
     .about-img:hover {
       transform: scale(1.05);
