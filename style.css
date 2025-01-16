@@ -10,7 +10,11 @@
 
   .nav-link {
     transition: color 0.3s ease;
-  }
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
 
   .nav-link:hover {
     color: #00bcd4; 
@@ -274,22 +278,17 @@
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     }
 
-  .footer-link {
-    text-decoration: none;
-    color: #f8f9fa;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-  }
-
-  .footer-link:hover {
-    color: #00bcd4;
-    text-decoration: underline;
-  }
-
-  .footer-link:hover {
-    text-decoration: underline;
-    color: #f8f9fa;
-  }
-  
+    .footer-link {
+      text-decoration: none;
+      color: #f8f9fa;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    
+    .footer-link:hover {
+      color: #00bcd4;
+      text-decoration: underline;
+    }
+    
   @media (max-width: 768px) {
     .footer-links ul {
       flex-direction: column;
@@ -299,7 +298,7 @@
 
   
 
-  .fa-instagram:hover { color:lightskyblue; }
-  .fa-twitter:hover { color: lightskyblue }
-  .fa-linkedin:hover { color:lightskyblue; }
-  .fa-github:hover { color: lightskyblue; }
+  .fa-instagram:hover { color:#00bcd4; }
+  .fa-twitter:hover { color: #00bcd4 }
+  .fa-linkedin:hover { color:#00bcd4; }
+  .fa-github:hover { color: #00bcd4; }
